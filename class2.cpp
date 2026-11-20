@@ -250,24 +250,25 @@
 
 
 
-#include <iostream>
-using namespace std;
-int main() {
+// #include <iostream>
+// using namespace std;
+// int main() {
 
-    int n ;
-    cin>>n;
-    for(int i =1; i<=n ; i++){
+//     int n ;
+//     cin>>n;
+//     for(int i =1; i<=n ; i++){
 
-        for(int s = 1;s <= n-i;s++){
-            cout<<" ";
-        }
+//         for(int s = 1;s <= n-i;s++){
+//             cout<<" ";
+//         }
 
 
-        for(int j = 1; j<=i; j++){
-            cout<<j<<" ";
-        }
-        cout<<endl;
-    }
+//         for(int j = 1; j<=i; j++){
+//             cout<<j<<" ";
+//         }
+//         cout<<endl;
+//     }
     
-    return 0;
-}
+//     return 0;
+// }
+
