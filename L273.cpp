@@ -55,16 +55,12 @@ int main() {
         rem = n %10;
 
         if(position == 1){
-            // if(11<= (rem1)<=19 ){
-            //     number = number +  m3[rem1];
-            //     position+=2;
-            //     n/=100;
-            //     continue;
-            // }else{
-                
-            // }
-
-
+            if(rem1 >= 11 && rem1 <= 19){
+                number = number +  m3[rem1];
+                position+=2;
+                n/=100;
+                continue;
+            }
             number = number +  m1[rem];
         }else if(position == 2){
             number =  m2[rem]  +" " +number;
