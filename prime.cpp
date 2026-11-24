@@ -79,37 +79,37 @@
 
 
 
-// // prime number till n 
-// #include <iostream>
-// #include<vector>
-// using namespace std;
+// prime number till n 
+#include <iostream>
+#include<vector>
+using namespace std;
 
-// int main() {
-//     int n;
-//     if (!(cin >> n)) return 1;
-//     int count=0;
+int main() {
+    int n;
+    if (!(cin >> n)) return 1;
+    int count=0;
     
-//     vector<int> v;
+    vector<int> v;
 
-//     for(int i = 2; i<=n ; i++ ){
-//         if(i==2){v.push_back(i); continue;}
-//         if(i%2==0){continue;}
-//         for(int k = 3; k<=i/k; k++){
-//             if(i%k==0){
-//                 count++;
-//             }
-//         }
-//         if(count==0){
-//             v.push_back(i);
-//         }
-//         count=0;
-//     }
+    for(int i = 2; i<=n ; i++ ){
+        if(i==2){v.push_back(i); continue;}
+        if(i%2==0){continue;}
+        for(int k = 3; k<=i/k; k++){
+            if(i%k==0){
+                count++;
+            }
+        }
+        if(count==0){
+            v.push_back(i);
+        }
+        count=0;
+    }
 
-//     for(int i = 0; i<v.size(); i++){
-//         cout<<v[i]<<"  ";
-//     }
-//     return 0;
-// }
+    for(int i = 0; i<v.size(); i++){
+        cout<<v[i]<<"  ";
+    }
+    return 0;
+}
 
 
 // //prime of sum
@@ -157,44 +157,44 @@
 
 
 
-//super prime 
+// //super prime 
 
-#include <iostream>
-#include<vector>
-using namespace std;
-bool isPrime(int num){
-    if(num<=1){
-        return false;
-    }
-    if(num==2){return true;}
-    if(num%2==0){
-        return false;
-    }
+// #include <iostream>
+// #include<vector>
+// using namespace std;
+// bool isPrime(int num){
+//     if(num<=1){
+//         return false;
+//     }
+//     if(num==2){return true;}
+//     if(num%2==0){
+//         return false;
+//     }
 
-    for(int i = 3;i<=num/i; i+=2 ){
-        if(num%i==0){
-            return false;
-        }
-    }
-    return true;
-}
-int main() {
-    int n;
-    if (!(cin >> n)) return 1;
-    int count=1;
-    vector<int> list;
+//     for(int i = 3;i<=num/i; i+=2 ){
+//         if(num%i==0){
+//             return false;
+//         }
+//     }
+//     return true;
+// }
+// int main() {
+//     int n;
+//     if (!(cin >> n)) return 1;
+//     int count=1;
+//     vector<int> list;
     
-    for(int i = 1;i<=n; i++ ){
-        if(isPrime(i)){
-            if(isPrime(count)){
-                list.push_back(i);
-            }
+//     for(int i = 1;i<=n; i++ ){
+//         if(isPrime(i)){
+//             if(isPrime(count)){
+//                 list.push_back(i);
+//             }
             
-            count++;
-        }
-    }
+//             count++;
+//         }
+//     }
 
-    for(int i = 0;i<list.size(); i++ ){
-        cout<<list[i]<<" ";
-    }
-}
+//     for(int i = 0;i<list.size(); i++ ){
+//         cout<<list[i]<<" ";
+//     }
+// }

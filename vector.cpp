@@ -48,54 +48,29 @@
 
 
 
-// #include <iostream>
-// #include<vector>
-// using namespace std;
-// int main() {
+#include <iostream>
+#include<vector>
+using namespace std;
+int main() {
 
-//     vector<int> chalk ={5,1,5};
-//     int k = 22;
+    vector<int> chalk ={5,1,5};
+    int k = 22;
 
-//     long long sum = 0;
-//     for(int c: chalk){
-//         sum+=c;
-//     }
+    long long sum = 0;
+    for(int c: chalk){
+        sum+=c;
+    }
 
-//     k %= sum;
+    k %= sum;
 
-//     for(int i = 0; i<chalk.size(); i++){
-//         if(k<chalk[i]){
-//             cout<<i<<endl;
-//             break;
-//         }
-//         k-=chalk[i];
-//     }
+    for(int i = 0; i<chalk.size(); i++){
+        if(k<chalk[i]){
+            cout<<i<<endl;
+            break;
+        }
+        k-=chalk[i];
+    }
 
-//     return 0;
-// }
-
-
-// #include <iostream>
-// #include<vector>
-// using namespace std;
-// int main() {
-
-//     vector<int> nums ={1,1,1,1};
-//     int count = 0;
-
-//     for(int i = 0; i<nums.size(); i++){
-//         for(int j = i+1; j<nums.size(); j++){
-//             if(nums[i] == nums[j]){
-//                 count++;
-//             }
-//         }
-//     }
-//     cout<<count;
-    
-
-//     return 0;
-// }
-
-
-
+    return 0;
+}
 
